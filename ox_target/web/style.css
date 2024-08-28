@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --color-default: #cfd2da;
+}
+
+body {
+  visibility: hidden;
+  user-select: none;
+  white-space: nowrap;
+  margin: 0;
+  user-select: none;
+  overflow: hidden;
+}
+
+p {
+  margin: 0;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 100, "GRAD" 0, "opsz" 40;
+}
+
+#eye {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 19pt;
+  fill: #466275;
+  animation: JebaneKrycie 220ms ease-in-out;
+}
+
+#options-wrapper {
+  position: absolute;
+  top: calc(48.3%);
+  left: calc(50% + 18pt);
+  transition: 0.1s;
+}
+
+.option-container {
+  color: var(--color-default);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+	font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(340deg, #31313173 0%, #31313173 60%);
+  box-shadow: 0px 0px 2px 0px #000000;
+	-webkit-box-shadow: 0px 0px 2px 0px #000000;
+	-moz-box-shadow: 0px 0px 2px 0px #000000e7;
+
+  font-size: 10.5pt;
+  line-height: 12pt;
+  vertical-align: middle;
+  transition: 200ms;
+  transform-origin: left top;
+  scale: 1;
+  height: 19pt;
+  width: auto;
+  top: 0;
+  margin: 2px 2px 2px 2px;
+  padding: 5px 3px;
+  border-radius: 4px;
+  animation: JebaneKrycie 400ms ease-in-out;
+}
+
+.option-container:hover {
+  background-image: linear-gradient(365deg, #ff9100 0%, #31313173  80%);
+  transform-origin: left top;
+	transition: all 0.2s ease-in;
+	box-shadow: 0px 0px 2px 0px #ff9100;
+	-webkit-box-shadow: 0px 0px 2px 0px #ff9100;
+	-moz-box-shadow: 0px 0px 2px 0px #ff9100e7;
+
+}
+
+.option-icon {
+  font-size: 12pt;
+  line-height: 20pt;
+  width: 14pt;
+  margin: 5pt;
+  padding: 1px 2px;
+  border-radius: 1px;
+  color: var(--color-default);
+}
+
+.option-label {
+  font-weight: 450;
+  margin-left: 0.2vw;
+  margin-right: 1.8vw;
+}
+
+
+@keyframes rozjebanieNaBoki {
+	0% {
+		transform: scaleX(0);
+	}
+	80% {
+		transform: scaleX(1.1)
+	}
+	100% {
+		transform: scaleX(1)
+	}
+}
+
+@keyframes JebaneKrycie {
+	0% {
+		opacity: 0;
+	}
+	80% {
+		opacity: 80;
+	}
+	100% {
+		opacity: 100;
+	}
+}
